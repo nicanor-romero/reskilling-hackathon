@@ -30,7 +30,7 @@ public class HelloWorld {
         @GetMapping("/test-db")
         public String testDb() {
             // SQL query to select the specific column and row
-            String sql = "SELECT \"test-column\" FROM \"test-table\" LIMIT 1"; 
+            String sql = "SELECT \"name\" FROM \"products\" LIMIT 1";
             
             try {
                 // Execute the query and map the result to a String
